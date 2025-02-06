@@ -1,0 +1,220 @@
+{
+  "url": {
+    "conditions": [
+      {
+        "id": "on-loaded",
+        "scriptName": "OnLoaded",
+        "isTrigger": true
+      },
+      {
+        "id": "on-error",
+        "scriptName": "OnError",
+        "isTrigger": true
+      }
+    ],
+    "actions": [
+      {
+        "id": "load-url",
+        "scriptName": "LoadUrl",
+        "highlight": true,
+        "isAsync": true,
+        "params": [
+          {
+            "id": "url",
+            "type": "string"
+          },
+          {
+            "id": "id",
+            "type": "string"
+          },
+          {
+            "id": "save",
+            "type": "boolean"
+          }
+        ]
+      }
+    ],
+    "expressions": []
+  },
+  "object": {
+    "conditions": [],
+    "actions": [
+      {
+        "id": "load-iid",
+        "scriptName": "LoadIID",
+        "highlight": false,
+        "params": [
+          {
+            "id": "id",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "load-object",
+        "scriptName": "LoadObject",
+        "highlight": false,
+        "params": [
+          {
+            "id": "param-id",
+            "type": "object",
+            "allowedPluginIds": [
+              "Sparsha_External_Image"
+            ]
+          },
+          {
+            "id": "id",
+            "type": "string"
+          }
+        ]
+      }
+    ],
+    "expressions": []
+  },
+  "old": {
+    "conditions": [],
+    "actions": [
+      {
+        "id": "destroy-data",
+        "scriptName": "DestroyData",
+        "highlight": false,
+        "isDeprecated": true,
+        "params": [
+          {
+            "id": "id",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "destroy-all",
+        "scriptName": "DestroyAll",
+        "highlight": false,
+        "isDeprecated": true
+      }
+    ],
+    "expressions": []
+  },
+  "storage": {
+    "conditions": [
+      {
+        "id": "on-saved",
+        "scriptName": "OnSaved",
+        "isTrigger": true
+      },
+      {
+        "id": "on-loaded-storage",
+        "scriptName": "OnLoadedStorage",
+        "isFakeTrigger": true
+      },
+      {
+        "id": "on-err-storage",
+        "scriptName": "OnErrStorage",
+        "isFakeTrigger": true
+      }
+    ],
+    "actions": [
+      {
+        "id": "load-localstorage",
+        "scriptName": "LoadLocalstorage",
+        "highlight": false,
+        "params": [
+          {
+            "id": "param-id",
+            "type": "object",
+            "allowedPluginIds": [
+              "Sparsha_External_Image"
+            ]
+          },
+          {
+            "id": "id",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "delete-localstorage",
+        "scriptName": "DeleteLocalstorage",
+        "highlight": false,
+        "params": [
+          {
+            "id": "param-id",
+            "type": "object",
+            "allowedPluginIds": [
+              "Sparsha_External_Image"
+            ]
+          },
+          {
+            "id": "id",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "paste-storage",
+        "scriptName": "PasteStorage",
+        "highlight": false
+      }
+    ],
+    "expressions": []
+  },
+  "memory": {
+    "conditions": [],
+    "actions": [
+      {
+        "id": "destroy-id",
+        "scriptName": "DestroyId",
+        "highlight": false,
+        "params": [
+          {
+            "id": "param-id",
+            "type": "object",
+            "allowedPluginIds": [
+              "Sparsha_External_Image"
+            ]
+          },
+          {
+            "id": "id",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "id": "destroy-object",
+        "scriptName": "DestroyObject",
+        "highlight": false,
+        "params": [
+          {
+            "id": "param-id",
+            "type": "object",
+            "allowedPluginIds": [
+              "Sparsha_External_Image"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "release-memory",
+        "scriptName": "ReleaseMemory",
+        "highlight": false
+      }
+    ],
+    "expressions": []
+  },
+  "property": {
+    "conditions": [],
+    "actions": [],
+    "expressions": [
+      {
+        "id": "image-height",
+        "expressionName": "ImageActualHeight",
+        "returnType": "number"
+      },
+      {
+        "id": "image-width",
+        "expressionName": "ImageActualWidth",
+        "returnType": "number"
+      }
+    ]
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "languageTag": "en-US",
+  "fileDescription": "Strings for Remote Image Plugin",
+  "text": {
+    "plugins": {
+      "sparsha_external_image": {
+        "name": "Remote Image",
+        "description": "Load different external images into each instance of one object.",
+        "help-url": "https://www.construct.net/en/make-games/addons/570/remote-image",
+        "properties": {
+          "auto-destroy": {
+            "name": "Auto Clear Image Data",
+            "desc": "Clear all data & image-id when all instances of the object has been destroyed."
+          },
+          "origin": {
+            "name": "Origin",
+            "desc": "Choose the location of origin in the object.",
+            "items": {
+              "0Item": "Top-left",
+              "1Item": "Top",
+              "2Item": "Top-right",
+              "3Item": "Left",
+              "4Item": "Center",
+              "5Item": "Right",
+              "6Item": "Bottom-left",
+              "7Item": "Bottom",
+              "8Item": "Bottom-right"
+            }
+          },
+          "edit-image": {
+            "name": "Placeholder Image",
+            "desc": "Edit placeholder image",
+            "link-text": "Edit"
+          },
+          "make-original-size": {
+            "name": "Size",
+            "desc": "Make original size",
+            "link-text": "Make 1:1"
+          }
+        },
+        "aceCategories": {
+          "url": " Image: URL",
+          "object": " Image: Object",
+          "old": " deprecated",
+          "storage": " Image: Local Storage",
+          "memory": " Memory Management",
+          "property": " Properties"
+        },
+        "conditions": {
+          "on-loaded": {
+            "list-name": "On Loaded from URL",
+            "display-text": "On Loaded from URL",
+            "description": "On Loaded image from URL"
+          },
+          "on-error": {
+            "list-name": "On Error loading URL",
+            "display-text": "On Error loading URL",
+            "description": "On Error loading image from URL"
+          },
+          "on-saved": {
+            "list-name": "On Saved to Local Storage",
+            "display-text": "On Saved to Local Storage",
+            "description": "On Saved to Local Storage"
+          },
+          "on-loaded-storage": {
+            "list-name": "On Fetched from Local Storage",
+            "display-text": "On Fetched from Local Storage",
+            "description": "On Fetched image from Local Storage"
+          },
+          "on-err-storage": {
+            "list-name": "On Local Storage not found",
+            "display-text": "On Local Storage not found",
+            "description": "On image data not found in Local Storage"
+          }
+        },
+        "actions": {
+          "load-url": {
+            "list-name": "Load from URL",
+            "display-text": "Load from URL ({0}, {1}, {2})",
+            "description": "Load image from URL",
+            "params": {
+              "url": {
+                "name": "URL",
+                "desc": "Enter url of the image"
+              },
+              "id": {
+                "name": "Image ID",
+                "desc": "Image ID Name"
+              },
+              "save": {
+                "name": "Save to Local Storage",
+                "desc": "Save image data in local storage"
+              }
+            }
+          },
+          "load-iid": {
+            "list-name": "Paste from ID",
+            "display-text": "Paste from ID ({0})",
+            "description": "Paste image from ID",
+            "params": {
+              "id": {
+                "name": "Image ID",
+                "desc": "Image ID Name"
+              }
+            }
+          },
+          "destroy-data": {
+            "list-name": "Clear Image Data of ID",
+            "display-text": "Clear Image Data of ID ({0})",
+            "description": "Clear Image Data of ID",
+            "params": {
+              "id": {
+                "name": "Image ID",
+                "desc": "Image ID Name"
+              }
+            }
+          },
+          "destroy-all": {
+            "list-name": "Clear all Image Data",
+            "display-text": "Clear all Image Data",
+            "description": "Clear all Image Data"
+          },
+          "load-object": {
+            "list-name": "Paste from Object",
+            "display-text": "Paste from ({0} ({1})",
+            "description": "Paste image from another Object",
+            "params": {
+              "param-id": {
+                "name": "Object",
+                "desc": "Object"
+              },
+              "id": {
+                "name": "Image ID",
+                "desc": "Image ID Name"
+              }
+            }
+          },
+          "load-localstorage": {
+            "list-name": "Fetch from Local Storage",
+            "display-text": "Fetch from Local Storage ({0} ({1})",
+            "description": "Fetch image data from Local Storage.",
+            "params": {
+              "param-id": {
+                "name": "Object",
+                "desc": "Object"
+              },
+              "id": {
+                "name": "Image ID",
+                "desc": "Image ID Name"
+              }
+            }
+          },
+          "destroy-id": {
+            "list-name": "Clear Image Data of ID",
+            "display-text": "Clear Image Data of ID ({0}, {1})",
+            "description": "Clear Image Data of ID for all instances linked with this ID, and this also frees memory usage. You wont be able to Paste image using this ID anymore.",
+            "params": {
+              "param-id": {
+                "name": "Object",
+                "desc": "Object"
+              },
+              "id": {
+                "name": "Image ID",
+                "desc": "Image ID Name"
+              }
+            }
+          },
+          "destroy-object": {
+            "list-name": "Clear all Image Data of Object",
+            "display-text": "Clear all Image Data  of ({0})",
+            "description": "Clear all Image Data of all ID associated with the selected Object, and this also frees memory usage. You wont be able to Paste image using these IDs anymore.",
+            "params": {
+              "param-id": {
+                "name": "Object",
+                "desc": "Object"
+              }
+            }
+          },
+          "delete-localstorage": {
+            "list-name": "Delete from Local Storage",
+            "display-text": "Delete from Local Storage ({0}, {1})",
+            "description": "Delete from Local Storage",
+            "params": {
+              "param-id": {
+                "name": "Object",
+                "desc": "Object"
+              },
+              "id": {
+                "name": "Image ID",
+                "desc": "Image ID Name"
+              }
+            }
+          },
+          "paste-storage": {
+            "list-name": "Set Fetched Image",
+            "display-text": "Set Fetched Image",
+            "description": "Set fetched Image from Local Storage."
+          },
+          "release-memory": {
+            "list-name": "Unload from Memory",
+            "display-text": "Unload from Memory",
+            "description": "This will free the memory used by the selected instance. Image IDs wont be deleted. So you can still paste using the IDs."
+          }
+        },
+        "expressions": {
+          "image-height": {
+            "translated-name": "ImageActualHeight",
+            "description": "Actual height of image"
+          },
+          "image-width": {
+            "translated-name": "ImageActualWidth",
+            "description": "Actual width of image"
+          }
+        }
+      }
+    }
+  }
+}

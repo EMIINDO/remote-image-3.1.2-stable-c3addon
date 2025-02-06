@@ -1,0 +1,36 @@
+{
+  "is-c3-addon": true,
+  "sdk-version": 2,
+  "min-construct-version": "r401",
+  "type": "plugin",
+  "name": "Remote Image",
+  "id": "Sparsha_External_Image",
+  "version": "3.1.2",
+  "author": "Sparsha",
+  "website": "https://www.constructdatabase.com/",
+  "documentation": "https://www.construct.net/en/make-games/addons/570/remote-image/",
+  "description": "Load different external images into each instance of one object.",
+  "editor-scripts": [
+    "plugin.js",
+    "type.js",
+    "instance.js"
+  ],
+  "file-list": [
+    "c3runtime/main.js",
+    "c3runtime/plugin.js",
+    "c3runtime/type.js",
+    "c3runtime/instance.js",
+    "c3runtime/conditions.js",
+    "c3runtime/actions.js",
+    "c3runtime/expressions.js",
+    "lang/en-US.json",
+    "aces.json",
+    "addon.json",
+    "icon.svg",
+    "instance.js",
+    "plugin.js",
+    "type.js",
+    "c3runtime/domside.js",
+    "c3runtime/version.js"
+  ]
+}
